@@ -2,7 +2,7 @@
 
 ## Design Record
 
-- checked date: 2026-08-04
+- checked date: 2026-08-16
 - repository version: `0.7.5`
 - implementation maturity: beta, standalone CLI-backed Agent Skill
 - version policy: keep numeric Semantic Versions without a beta suffix
@@ -65,6 +65,19 @@
   not expose a safe status-name catalog or nullable update inputs.
 - completed GitHub Issue #12 with synthetic, redacted examples for search,
   local save, hygiene, and notification review.
+
+## 2026-08-16 Maintenance Check
+
+- verified the Agent Skill profile: Node 22/24 CI, a Node 24 release build,
+  least-authority CI permissions, and final bundle coverage remain aligned
+  with the recorded beta contract.
+- ran the complete local build: 45 tests passed, the isolated Skill-bundle and
+  release-ZIP checks passed, and the pinned runtime provenance check passed.
+- confirmed the repository worktree is clean and the tracked
+  `workplace/.gitkeep` retains the documented ignored-workspace convention.
+- no compatible, approved product or CI uplift remains for this repository;
+  the next material maintenance item requires a separately scoped upstream
+  runtime or public-contract change.
 
 ## Repository Boundary
 
